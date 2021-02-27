@@ -1,0 +1,60 @@
+@import '../../style-constants.scss';
+
+.query-page-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .paper-container {
+        @media screen and (max-width: $tabletScreen) {
+            width: 100%;
+        }
+
+        @media screen and (min-width: $tabletScreen) {
+            width: 60%;
+        }
+        
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .ingredient-input {
+            width: 60%;
+
+            &.without-error {
+                margin-bottom: 20px;
+            }
+        }
+
+        .input-validation-error {
+            width: 60%;
+            color: red;
+            margin-bottom: 20px;
+        }
+
+        .recent-searches-wrapper {
+            width: 80%;
+
+            .recent-searches-title {
+                display: flex;
+                align-items: center;
+                margin-bottom: 5px;
+
+                .recent-searches-icon {
+                    margin-right: 10px;
+                }
+            }
+
+            .recent-search-item {
+                cursor: pointer;
+                margin: 2px;
+            }
+        }
+
+        .search-button {
+            width: 80%;
+            margin-top: 20px;
+        }
+    }
+}

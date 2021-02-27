@@ -1,0 +1,9 @@
+{
+  "short_name": "Search Recipes",
+  "name": "Search Recipes By Ingredients",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
